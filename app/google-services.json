@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "222103174770",
+    "project_id": "ocentar-ae86",
+    "storage_bucket": "ocentar-ae86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222103174770:android:2221d85252e687e7600ceb",
+        "android_client_info": {
+          "package_name": "com.delloon.ocentar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222103174770-uhn8b40j4de5l098cm3tesrf3hb66gru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.delloon.ocentar",
+            "certificate_hash": "1c09a546aa0df777e2f1d8042c0a0fa81994390f"
+          }
+        },
+        {
+          "client_id": "222103174770-9csafqpc3vl2aqa27u9gob4vecbn73jg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Qqs3CHTsjp4EIxEtFNY0LDOItvI87fA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222103174770-9csafqpc3vl2aqa27u9gob4vecbn73jg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

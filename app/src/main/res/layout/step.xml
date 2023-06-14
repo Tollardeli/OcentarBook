@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editTextStep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/list_hint"
+        android:inputType="textPersonName|textCapSentences"
+        android:textAppearance="@style/buttonTextTagTypeOne"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/deleteStepMaterialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/delete_step_text_description"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/icon_delete"
+        android:onClick="onDelete"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextStep"
+        app:layout_constraintEnd_toEndOf="@+id/editTextStep"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextStep"
+        app:layout_constraintTop_toTopOf="@+id/editTextStep"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

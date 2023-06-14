@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewTitleAuthorization"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sign_up"
+        android:textAppearance="@style/title_text"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSignEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:background="@drawable/image_search_box"
+        android:padding="10dp"
+        android:inputType="textCapSentences|textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDialogMessage" />
+
+    <EditText
+        android:id="@+id/editTextSignName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/login_hint"
+        android:background="@drawable/image_search_box"
+        android:padding="10dp"
+        android:inputType="textPersonName|textCapSentences"
+        android:minHeight="48dp"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignEmail" />
+
+    <Button
+        android:id="@+id/buttonSignUpIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFB28B"
+        android:text="@string/sign_up_action"
+        android:textAppearance="@style/buttonTextPreviewStyle"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignEmail"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoogleSignIn" />
+
+    <EditText
+        android:id="@+id/editTextSignPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:background="@drawable/image_search_box"
+        android:padding="10dp"
+        android:textColorHint="#757575"
+        android:inputType="textCapSentences|textPassword"
+        android:minHeight="48dp"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignName" />
+
+    <Button
+        android:id="@+id/forgetPassword"
+        style="@style/buttonTextPreviewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFB28B"
+        android:text="@string/forget_password"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignEmail"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUpIn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewDialogMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/dialog_reset_email_message"
+        android:textColor="@color/design_default_color_error"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSignEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextSignEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleAuthorization" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/buttonGoogleSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:buttonSize="standard"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignUpIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUpIn"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSignPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUserAgreement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_agreement"
+        android:textAppearance="@style/buttonTextPreviewStyle"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignUpIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUpIn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignUpIn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPrivacyPolicy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:textAppearance="@style/buttonTextPreviewStyle"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSignUpIn"
+        app:layout_constraintStart_toStartOf="@+id/buttonSignUpIn"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxUserAgreement" />
+
+    <Button
+        android:id="@+id/buttonPrivacyPolicyFile"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:text="@string/privacy_policy_text"
+        android:textColor="#56A2FF"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxPrivacyPolicy"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPrivacyPolicy" />
+
+    <Button
+        android:id="@+id/buttonUserAgreementFile"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:text="@string/user_agreement_text"
+        android:textColor="#56A2FF"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxPrivacyPolicy"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPrivacyPolicy" />
+</androidx.constraintlayout.widget.ConstraintLayout>

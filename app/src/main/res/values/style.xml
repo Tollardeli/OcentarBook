@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#FFF5EE</item>
+        <item name="colorSecondary">#FF3B3B</item>
+    </style>
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">#212121</item>
+        <item name="fontFamily">@font/montserrt_alternates_light</item>
+    </style>
+    <style name="mainTextAmatic">
+        <item name="android:textSize">35sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="fontFamily">@font/amatic_sc_bold</item>
+    </style>
+    <style name="buttonLongWhileTextColor">
+        <item name="android:textAppearance">@style/mainTextAmatic</item>
+        <item name="android:textColor">#FFF5EE</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="backgroundTint">#B15124</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+    <style name="buttonLongBlackTextColor">
+        <item name="android:textAppearance">@style/mainTextAmatic</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="backgroundTint">#FF715E</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+    <style name="buttonBigBoxMain">
+        <item name="android:textAppearance">@style/mainTextAmatic</item>
+        <item name="backgroundTint">#FFB28B</item>
+        <item name="cornerRadius">18dp</item>
+    </style>
+    <style name="buttonLongMain">
+        <item name="android:textAppearance">@style/mainTextAmatic</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="backgroundTint">#FFB28B</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textSize">45sp</item>
+        <item name="lineHeight">32sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">#212121</item>
+        <item name="fontFamily">@font/amatic_sc_bold</item>
+    </style>
+    <style name="recipe_text">
+        <item name="android:textSize">28sp</item>
+        <item name="lineHeight">35.31sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">#212121</item>
+        <item name="fontFamily">@font/amatic_sc_bold</item>
+    </style>
+    <style name="second_title_text">
+        <item name="android:textSize">36sp</item>
+        <item name="lineHeight">32sp</item>
+        <item name="android:letterSpacing">-0.04</item>
+        <item name="android:textColor">#212121</item>
+        <item name="fontFamily">@font/amatic_sc_bold</item>
+    </style>
+
+
+
+
+    <style name="buttonTextPreviewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:translationY">-2.25sp</item>
+        <item name="android:textColor">#FFF5EE</item>
+        <item name="fontFamily">@font/montserrat_alternates_semibold</item>
+    </style>
+    <style name="buttonTextTagTypeOne">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">-1sp</item>
+        <item name="android:textColor">#212121</item>
+        <item name="fontFamily">@font/montserrt_alternates_light</item>
+    </style>
+    <style name="buttonTextTagTypeTwo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">-1sp</item>
+        <item name="android:textColor">#FFF5EE</item>
+        <item name="fontFamily">@font/montserrt_alternates_light</item>
+    </style>
+
+</resources>

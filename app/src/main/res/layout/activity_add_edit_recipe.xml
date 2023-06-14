@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditRecipeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextAddRecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/recipe_name_hint"
+                android:inputType="textPersonName|textCapSentences"
+                android:minHeight="48dp"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textColor="#212121"
+                android:textColorHint="#757575"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/buttonAddImageRecipe"
+                android:layout_width="0dp"
+                android:layout_height="370dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="40dp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAddRecipeName"
+                app:layout_constraintStart_toStartOf="@+id/editTextAddRecipeName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAddRecipeName"
+                app:strokeColor="#818181"
+                app:strokeWidth="2px">
+
+                <ImageView
+                    android:id="@+id/viewAddRecipeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewRecipeHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/recipe_image_hint"
+                    android:textAppearance="@style/title_text"
+                    android:textColor="#757575"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/viewAddRecipeImage" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textViewListIngredientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/list_item_name_ingredient"
+                android:textAppearance="@style/title_text"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAddRecipeName"
+                app:layout_constraintStart_toStartOf="@+id/editTextAddRecipeName"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAddImageRecipe" />
+
+            <TextView
+                android:id="@+id/textViewListIngreidentHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_list_hint_ingredient"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAddRecipeName"
+                app:layout_constraintStart_toStartOf="@+id/editTextAddRecipeName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewListIngredientName" />
+
+            <LinearLayout
+                android:id="@+id/listIngredient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAddRecipeName"
+                app:layout_constraintStart_toStartOf="@+id/editTextAddRecipeName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewListIngreidentHint">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonAddIngredientItem"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFB28B"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/add_item_ingredient"
+                android:textAppearance="@style/second_title_text"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/listIngredient"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/listIngredient"
+                app:layout_constraintTop_toBottomOf="@+id/listIngredient"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textViewListStepName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/list_item_name_recipe"
+                android:textAppearance="@style/title_text"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAddIngredientItem"
+                app:layout_constraintStart_toStartOf="@+id/buttonAddIngredientItem"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAddIngredientItem" />
+
+            <TextView
+                android:id="@+id/textViewListStepHint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/title_list_hint_recipe"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAddIngredientItem"
+                app:layout_constraintStart_toStartOf="@+id/buttonAddIngredientItem"
+                app:layout_constraintTop_toBottomOf="@+id/textViewListStepName" />
+
+            <LinearLayout
+                android:id="@+id/listStep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAddRecipeName"
+                app:layout_constraintStart_toStartOf="@+id/editTextAddRecipeName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewListStepHint">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonAddStepItem"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFB28B"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/add_item_recipe"
+                android:textAppearance="@style/second_title_text"
+                app:cornerRadius="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/listStep"
+                app:layout_constraintStart_toStartOf="@+id/listStep"
+                app:layout_constraintTop_toBottomOf="@+id/listStep" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#FFB28B"
+                android:text="@string/save"
+                android:textAppearance="@style/second_title_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAddStepItem"
+                app:layout_constraintStart_toStartOf="@+id/buttonAddStepItem"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerKitchenTag" />
+
+            <TextView
+                android:id="@+id/textViewCookingTimeTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_cooking_time_tag"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonAddStepItem"
+                app:layout_constraintStart_toStartOf="@+id/buttonAddStepItem"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAddStepItem" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerCookingTimeTag"
+                android:theme="@style/mySpinnerItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/present_spinner_cooking_time"
+                android:entries="@array/cooking_time"
+                android:minHeight="48dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/textViewCookingTimeTag"
+                app:layout_constraintStart_toStartOf="@+id/textViewCookingTimeTag"
+                app:layout_constraintTop_toBottomOf="@+id/textViewCookingTimeTag" />
+
+            <TextView
+                android:id="@+id/textViewDifficultyTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_difficulty_tag"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerCookingTimeTag"
+                app:layout_constraintStart_toStartOf="@+id/spinnerCookingTimeTag"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerCookingTimeTag" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerDifficultyTag"
+                android:theme="@style/mySpinnerItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/present_spinner_difficulty"
+                android:entries="@array/difficulty"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewDifficultyTag"
+                app:layout_constraintStart_toStartOf="@+id/textViewDifficultyTag"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDifficultyTag" />
+
+            <TextView
+                android:id="@+id/textViewKitchenTag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/text_kitchen_tag"
+                android:textAppearance="@style/buttonTextTagTypeOne"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerDifficultyTag"
+                app:layout_constraintStart_toStartOf="@+id/spinnerDifficultyTag"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerDifficultyTag" />
+
+            <Spinner
+                android:id="@+id/spinnerKitchenTag"
+                android:theme="@style/mySpinnerItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/present_spinner_kitchen"
+                android:entries="@array/kitchen"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/textViewKitchenTag"
+                app:layout_constraintStart_toStartOf="@+id/textViewKitchenTag"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKitchenTag" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral() // For ImagePicker library, this line is enough. Although, it has been published on jitpack as well
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "Ocentar"
+include ':app'

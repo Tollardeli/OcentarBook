@@ -1,0 +1,179 @@
+<resources>
+    <!--MainMenuActivity-->
+    <string name="app_name">Книга рецептов Ocentar</string>
+    <string name="button_profile_text">Профиль</string>
+    <string name="activity_name_add_edit_recipe">Добавление рецепта</string>
+    <string name="activity_name_edit_profile">Редактирование профиля</string>
+    <string name="activity_name_profile">Профиль</string>
+    <string name="recipes">Рецепт</string>
+    <string name="text_title_menu">Главное меню Ocentar</string>
+    <string name="basket">Корзина покупок</string>
+    <string name="more_recipe">Больше рецептов</string>
+    <!--Authorization -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_hint">Name</string>
+    <string name="sign_up">Регистрация</string>
+    <string name="sign_in">Вход</string>
+    <string name="sign_up_action">Зарегистрироваться</string>
+    <string name="sign_in_action">Войти</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="sign_in_error">Не удалось войти</string>
+    <string name="sign_up_error">Неудалось зарегистрироваться!</string>
+    <string name="send_verification_email_error">Неудалось отправить Email для подтверждения!</string>
+    <string name="send_verification_done">На почту была отправлена ссылка</string>
+    <string name="email_reset_password_was_sent">На почту была отправлена ссылка для восстановления пароля.</string>
+    <string name="dialog_reset_email_message">Введите почту для восстановления пароля.</string>
+    <string name="sign_in_done">Вход успешен!</string>
+    <!--ErrorAuthorization -->
+    <string name="link_done">Email успешно подключен к Google аккаунту</string>
+    <string name="enter_to_google">У вас уже есть аккаунт с этим Email адресом. Войдите по нему.</string>
+    <string name="edit_error">Произошла ошибка!</string>
+    <!--ProfileActivity-->
+    <string name="not_registration">Войдите или зарегистрируйтесь!</string>
+    <string name="title_text_profile_activity">Откройте для себя дополнительные возможности</string>
+    <string name="edit_completed">Данные успешно обновлены</string>
+    <!--AddEditActivity-->
+    <string name="recipe_name_hint">Напишите название</string>
+    <string name="add_item_ingredient">Добавить ещё ингредиент</string>
+    <string name="add_item_recipe">Добавить следующий шаг</string>
+    <string name="list_item_name_ingredient">Ингредиенты</string>
+    <string name="list_item_name_recipe">Приготовление</string>
+    <string name="title_list_hint_ingredient">Составьте список продуктов необходимых для рецепта</string>
+    <string name="title_list_hint_recipe">Опишите инструкции приготовления Вашего рецепта</string>
+    <string name="list_hint">Введите элемент рецепта</string>
+    <string name="delete_step_text_description">Удаление шага</string>
+    <string name="recipe_image_hint">Нажмите сюда чтобы добавить картинку</string>
+    <string name="text_cooking_time_tag">Выберите время приготовления из списка</string>
+    <string name="text_difficulty_tag">Выберите сложность приготовления из списка</string>
+    <string name="text_kitchen_tag">Выберите из списка кухню блюда</string>
+    <string name="present_spinner_cooking_time">Время приготовления</string>
+    <string name="present_spinner_difficulty">Сложность приготовдения</string>
+    <string name="present_spinner_kitchen">Кухня</string>
+    <string-array name="cooking_time">
+        <item />
+        <item>За 15 минут</item>
+        <item>За 30 минут</item>
+        <item>За 1 час</item>
+        <item>За 2 часа</item>
+        <item>За 3 часа</item>
+        <item>Больше</item>
+    </string-array>
+    <string-array name="difficulty">
+        <item />
+        <item>Простой</item>
+        <item>Продвинутый</item>
+        <item>Сложный</item>
+        <item>Другое</item>
+    </string-array>
+    <string-array name="kitchen">
+        <item />
+        <item>Европейская</item>
+        <item>Азиатская</item>
+        <item>Паназиатская</item>
+        <item>Восточная</item>
+        <item>Американская</item>
+        <item>Русская</item>
+        <item>Среднеземноморская</item>
+        <item>Другая</item>
+    </string-array>
+    <string name="empty_name">Вы должны вставить название</string>
+    <string name="empty_image">Вы должны вставить изображение</string>
+    <string name="empty_ingredient">Вы должны добавить хотя бы один ингредиент</string>
+    <string name="empty_step">Вы должны вставить хотя бы один шаг</string>
+    <string name="empty_cooking_time">Вы должны выбрать время приготовления</string>
+    <string name="empty_difficulty">Вы должны выбрать сложность</string>
+    <string name="empty_kitchen">Вы должны выбрать кухню</string>
+    <!--SearchTagActivity-->
+    <string name="text_search_tag_recipe">Поиск по тэгам</string>
+    <string name="cooking_time">Время приготовления</string>
+    <string name="in_15_minutes">За 15 минут</string>
+    <string name="in_30_minutes">За 30 минут</string>
+    <string name="in_1_hour">За 1 час</string>
+    <string name="in_2_hours">За 2 часа</string>
+    <string name="in_3_hours">За 3 часа</string>
+    <string name="more">Больше</string>
+    <string name="difficulty">Сложность приготовления</string>
+    <string name="simple">Простой</string>
+    <string name="advanced">Продвинутый</string>
+    <string name="complex">Сложный</string>
+    <string name="other_one">Другое</string>
+    <string name="kitchen">Кухня блюда</string>
+    <string name="european">Европейская</string>
+    <string name="asian">Азиатская</string>
+    <string name="pan_asian">Паназиатская</string>
+    <string name="eastern">Восточная</string>
+    <string name="american">Американская</string>
+    <string name="russian">Русская</string>
+    <string name="mediterranean">Средиземноморская</string>
+    <string name="other_two">Другая</string>
+    <string name="recipe">Рецепты</string>
+    <!--EditProfileActivity-->
+    <string name="name">Имя</string>
+    <string name="button_exit">Выход</string>
+    <string name="edit_profile">Изменить фото профиля</string>
+    <string name="save">Сохранить</string>
+    <string name="profile_image">Изображение профиля</string>
+    <string name="redact_profile">Редактировать профиль</string>
+    <string name="input_name">Введите новое имя</string>
+    <!--OutputAllRecipesActivity-->
+    <string name="main_text_recipe_view">textView</string>
+    <string name="button">button</string>
+    <string name="text_all_recipe">Все рецепты</string>
+    <string name="button_view_recipe">Посмотрим</string>
+    <string name="favorite_button">Избранное</string>
+    <!--SearchRecipeActivity-->
+    <string name="text_search_recipe">Поиск рецептов</string>
+    <string name="edit_text_search_hint">Введите полностью название</string>
+    <!--DescriptionActivity-->
+    <string name="name_recipe">Название</string>
+    <string name="thanks">ПРИЯТНОГО АППЕТИТА!</string>
+    <string name="text_add_recipe">+ Добавить рецепт</string>
+    <string name="activity_name_profile_user">Профиль пользователя</string>
+    <string name="rating">Рейтинг</string>
+    <string name="comment">Отзывы</string>
+    <string name="read_all">ЧИТАТЬ ВСЕ</string>
+    <string name="add_comment">ДОБАВИТЬ ОТЗЫВ</string>
+    <string name="edit_recipe">Редактировать рецепт</string>
+    <string name="shared_recipe">Поделиться рецептом</string>
+    <string name="delete_recipe">Удалить рецепт</string>
+    <string name="reject_recipe">Отклонить</string>
+    <string name="approve_recipe">Одобрить</string>
+    <!--Reviews-->
+    <string name="back">Назад</string>
+    <string name="add_reviews_recipe_title">Оцените рецепт</string>
+    <string name="done">Готово</string>
+    <string name="add_review_comment">Приготовили блюдо?\nПоделитесь своим мнением!</string>
+    <string name="add_comment_hint">Оставьте свой отзыв здесь</string>
+    <string name="comment_char_count">0/100</string>
+    <string name="report_comment">Пожаловаться на отзыв</string>
+    <plurals name="comment_count">
+        <item quantity="one">Оценка - %d</item>
+        <item quantity="other">Оценки - %d</item>
+    </plurals>
+    <string name="average_rating_recipe_text">Средний рейтинг рецепта %s</string>
+    <!--AdminPanelActivity-->
+    <string name="report_comment_text">Жалобы на комментарии</string>
+    <string name="user_recipe_text">Рецепты пользователей</string>
+    <string name="users_text">Пользователи</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_admin_panel">Добрый день, администратор!</string>
+    <string name="go_admin_panel">Перейти в панель администратора</string>
+    <string name="user_recipe">Пользовательские рецепты</string>
+    <string name="block">Отстранить</string>
+    <string name="skip">Пропустить</string>
+    <!--DialogShare-->
+    <string name="share">Поделиться</string>
+    <string name="share_recipe">Вы уверены что хотите поделиться рецептом?</string>
+    <string name="share_recipe_hint">Рецепт будет отправлен модерации на проверку</string>
+    <!--BasketRecipeActivity-->
+    <string name="title_basket_ingredient">Корзина ингредиентов</string>
+    <!--MoreRecipeActivity-->
+    <string name="title_more_recipe">Корзина ингредиентов</string>
+    <string name="write_here">Пишите тут</string>
+    <string name="user_agreement">Принимаю пользовательское соглашение</string>
+    <string name="privacy_policy">Принимаю политику конфеденциальности</string>
+    <string name="user_agreement_text">пользовательское соглашение</string>
+    <string name="privacy_policy_text">политика конфеденциальности</string>
+</resources>

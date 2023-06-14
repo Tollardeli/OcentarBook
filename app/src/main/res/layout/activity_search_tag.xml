@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchTagActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_text_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="@string/text_search_tag_recipe"
+        android:textAppearance="@style/title_text" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/secondTitleTextCookingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/cooking_time"
+                android:textAppearance="@style/second_title_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsIn15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/in_15_minutes"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsIn30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/in_30_minutes"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsIn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/in_1_hour"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsIn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/in_2_hours"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsIn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/in_3_hours"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FFB28B"
+                        android:text="@string/more"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/secondTitleTextDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/difficulty"
+                android:textAppearance="@style/second_title_text" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsSimple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#B15124"
+                        android:text="@string/simple"
+                        android:textAppearance="@style/buttonTextTagTypeTwo"
+                        android:textColor=" #FFF5EE"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsAdvanced"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#B15124"
+                        android:text="@string/advanced"
+                        android:textAppearance="@style/buttonTextTagTypeTwo"
+                        android:textColor=" #FFF5EE"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsComplex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#B15124"
+                        android:text="@string/complex"
+                        android:textAppearance="@style/buttonTextTagTypeTwo"
+                        android:textColor=" #FFF5EE"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsOtherOne"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#B15124"
+                        android:text="@string/other_one"
+                        android:textAppearance="@style/buttonTextTagTypeTwo"
+                        android:textColor=" #FFF5EE"
+                        app:cornerRadius="100dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/secondTitleTextTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/kitchen"
+                android:textAppearance="@style/second_title_text" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsEuropean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/european"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsAsian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/asian"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsPanAsian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/pan_asian"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsEastern"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/eastern"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsAmerican"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/american"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsRussian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/russian"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonTagsMediterranean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/mediterranean"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+
+                    <Button
+                        android:id="@+id/buttonTagsOtherTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#FF715E"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="@string/other_two"
+                        android:textAppearance="@style/buttonTextTagTypeOne"
+                        app:cornerRadius="100dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewRecipe"
+                android:layout_width="89dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/recipe"
+                android:textAppearance="@style/title_text" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RcViewTagsRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
